@@ -111,6 +111,7 @@ public class SpanManager : MonoBehaviour
 ```
 
 ## Output:
-![Screenshot (54)](https://user-images.githubusercontent.com/75235488/173235243-fbd83cb0-0991-4245-bc4c-05f3e8cf9096.png)
+<img width="60%" height="50%" src="https://user-images.githubusercontent.com/75235488/173235243-fbd83cb0-0991-4245-bc4c-05f3e8cf9096.png ">
+
 ## Result:
 Animal feeding game-Phase-1 using unity is developed successfully.
