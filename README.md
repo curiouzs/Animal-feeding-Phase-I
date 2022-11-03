@@ -1,11 +1,10 @@
 # Animal-feeding-Phase-I
 ## Aim: 
 To develop a animal feeding game-Phase-1 using unity.
-
 ## Algorithm:
 ### Player Controller
 ### Step 1: 
-Extract the package and in unity , asserts -> Import packages -> Custom packages and select the package. When we go to Assets folders we can see the course library which we extracted
+Extract the package and in unity , asserts -> Import packages -> Custom packages and select the package. 
 ### Step 2: 
 If you want, drag a different material from Course Library > Materials onto the Ground object
 ### Step 3: 
@@ -15,7 +14,7 @@ Rename the character “Player”, then reposition the animals and food so you c
 ### Step 5: 
 Adjust the XYZ scale of the food (2,2,2) so you can easily see it from above
 ### Step 6: 
-In your Assets folder, create a “Scripts” folder, and a “PlayerController” script inside.Attach the script to the Player by dragging the c# file to the player and open in the inspector and check whether it is attached
+In your Assets folder, create a “Scripts” folder, and a “PlayerController” script inside.Attach the script to the Player by dragging the c# file to the player.
 
 ### Flood Flight
 ### Step 1: 
@@ -37,7 +36,6 @@ Edit their speed values and test to see how it looks. Drag all three animals int
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;
@@ -46,11 +44,7 @@ public class PlayerController : MonoBehaviour
     public GameObject projectilePrefab;
     // Start is called before the first frame update
     void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    {}
     void Update()
     {
         if(transform.position.x < -xRange)
@@ -81,7 +75,6 @@ public class Moveforward : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {}
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
@@ -93,7 +86,6 @@ public class Moveforward : MonoBehaviour
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class SpanManager : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
